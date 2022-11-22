@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/cardview_light_background"
+        android:padding="6dp"
+        android:text="Hello World!" />
+
+    <com.android.text.EasyTextView
+        android:id="@+id/etv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:drawableStart="@drawable/svg_fail"
+        android:drawableTop="@drawable/svg_fail"
+        android:drawableEnd="@drawable/svg_fail"
+        android:drawableBottom="@drawable/svg_fail"
+        android:drawablePadding="4dp"
+        android:padding="10dp"
+        android:text="EasyTextViewEasyTextViewEasyTextViewEasyTextViewEasyTextViewEasyTextView"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:etv_bottom_drawable_mode="right"
+        app:etv_corner="10dp"
+        app:etv_corner_type="normal"
+        app:etv_left_drawable_height="36dp"
+        app:etv_left_drawable_mode="bottom"
+        app:etv_left_drawable_width="36dp"
+        app:etv_right_drawable_mode="top"
+        app:etv_solid="#FF04C9FF"
+        app:etv_stroke_color="#FC4A40"
+        app:etv_stroke_width="4dp"
+        app:etv_text_shader_enable="true"
+        app:etv_text_shader_end_color="#FFA200"
+        app:etv_text_shader_mode="topToBottom"
+        app:etv_text_shader_start_color="@color/white"
+        app:etv_top_drawable_mode="left" />
+
+</LinearLayout>

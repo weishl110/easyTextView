@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--SuperTextView-->
+    <declare-styleable name="SuperTextView">
+        <attr name="etv_corner" format="dimension" />
+        <attr name="etv_left_top_corner" format="dimension" />
+        <attr name="etv_right_top_corner" format="dimension" />
+        <attr name="etv_left_bottom_corner" format="dimension" />
+        <attr name="etv_right_bottom_corner" format="dimension" />
+
+        <attr name="etv_corner_type" format="enum">
+            <enum name="circle" value="1" /><!-- radius是高度的一半，设置的corner失效 -->
+            <enum name="normal" value="2" /><!-- radius是设置的 -->
+        </attr>
+
+        <attr name="etv_solid" format="reference|color" />
+        <attr name="etv_stroke_width" format="dimension" />
+        <attr name="etv_stroke_color" format="reference|color" />
+
+        <!-- 背景颜色  -->
+        <attr name="etv_bg_enabled_color" format="color" />
+        <attr name="etv_bg_selected_color" format="color" />
+        <attr name="etv_bg_pressed_color" format="color" />
+        <!-- 文本颜色 -->
+        <attr name="etv_text_enabled_color" format="color" />
+        <attr name="etv_text_selected_color" format="color" />
+        <attr name="etv_text_pressed_color" format="color" />
+
+        <attr name="etv_bold_width" format="dimension" />
+
+        <!-- 与etv_bold_width冲突，设置加粗后setv_bold_width失效 -->
+        <attr name="etv_text_stroke" format="boolean" />
+        <attr name="etv_text_stroke_color" format="reference|color" />
+        <attr name="etv_text_stroke_width" format="dimension" />
+
+        <attr name="etv_left_drawable_mode">
+            <enum name="top" value="3" />
+            <enum name="normal" value="1" />
+            <enum name="bottom" value="4" />
+        </attr>
+
+        <attr name="etv_right_drawable_mode">
+            <enum name="top" value="3" />
+            <enum name="normal" value="1" />
+            <enum name="bottom" value="4" />
+        </attr>
+
+        <attr name="etv_top_drawable_mode">
+            <enum name="left" value="0" />
+            <enum name="normal" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+
+        <attr name="etv_bottom_drawable_mode">
+            <enum name="left" value="0" />
+            <enum name="normal" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+
+        <attr name="etv_left_drawable_width" format="dimension" />
+        <attr name="etv_left_drawable_height" format="dimension" />
+
+        <attr name="etv_top_drawable_width" format="dimension" />
+        <attr name="etv_top_drawable_height" format="dimension" />
+
+        <attr name="etv_right_drawable_width" format="dimension" />
+        <attr name="etv_right_drawable_height" format="dimension" />
+
+        <attr name="etv_bottom_drawable_width" format="dimension" />
+        <attr name="etv_bottom_drawable_height" format="dimension" />
+
+        <!-- 背景渐变色 -->
+        <attr name="etv_shader_enable" format="boolean" />
+        <attr name="etv_shader_start_color" format="reference|color" />
+        <attr name="etv_shader_center_color" format="reference|color" />
+        <attr name="etv_shader_end_color" format="reference|color" />
+        <attr name="etv_shader_mode" format="enum">
+            <enum name="topToBottom" value="0" />
+            <enum name="bottomToTop" value="1" />
+            <enum name="leftToRight" value="2" />
+            <enum name="rightToLeft" value="3" />
+        </attr>
+
+        <!-- 文案渐变色 -->
+        <attr name="etv_text_shader_enable" format="boolean" />
+        <attr name="etv_text_shader_start_color" format="reference|color" />
+        <attr name="etv_text_shader_end_color" format="reference|color" />
+        <attr name="etv_text_shader_mode" format="enum">
+            <enum name="topToBottom" value="0" />
+            <enum name="bottomToTop" value="1" />
+            <enum name="leftToRight" value="2" />
+            <enum name="rightToLeft" value="3" />
+        </attr>
+
+        <attr name="etv_span_text" format="string" />
+        <attr name="etv_span_color" format="color" />
+        <attr name="etv_span_style">
+            <enum name="bold" value="1" />
+            <enum name="italic" value="2" />
+        </attr>
+        <attr name="etv_span_text_size" format="dimension" />
+
+        <attr name="etv_line_style" >
+            <enum name="normal" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="bottom" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>
